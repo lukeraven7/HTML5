@@ -21,7 +21,7 @@
                     }
                 }
                 
-            
+            Village();
             function Village(){
                 var village = prompt("You arrive at a small village. There is a blacksmith, inn, stable and several wooden homes").toLowerCase();
                 
@@ -29,14 +29,20 @@
                 switch(village){
                 case "blacksmith":
                     alert("The blacksmith scowls at you and mumbles something rude! You walk away intimidated.");
+                    Village();
                     break;
                 
                     case "inn":
                         alert("You enter the old weather torn inn. The innkeeper asks what he can do for you? Rent a room. Buy food. Sit by the hearth fire.");
+                        Village();
                     break;
                     case "stable":
                         alert("The stable master informs you that all of the horses have been stolen last night. He asks you for your help?");
+                        Village();
                     break;
+                    case "exit":
+                        alert("Run away, chicken! THE END!")
+                        break;
                     default:
                         alert("I do not understand" + village);
                         break;
