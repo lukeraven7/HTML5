@@ -7,11 +7,17 @@
         <h1>Adventure Game v1.0</h1>
         <p>Made by: Luke Raven</p>
         <script>
+            var inventory = {
+                sword:0,
+                bread:0,
+                meat:0,
+                fish:0,
+            }
            Start();
             function Start(){
                 
                 var playerName = prompt("What is your name traveler?"); 
-                    alert("Welcome to the land of Vexxor " + playerName);
+                    alert("Welcome to the land of Vexxor, " + playerName);
                 
                 var startGame = confirm("Are you ready to begin your adventure?");
                     if(startGame){
@@ -29,7 +35,8 @@
                 switch(village){
                 case "blacksmith":
                     alert("The blacksmith scowls at you and mumbles something rude! You walk away intimidated.");
-                    Village();
+                    Black();
+                   
                     break;
                 
                     case "inn":
@@ -46,8 +53,50 @@
                     default:
                         alert("I do not understand" + village);
                         break;
+            
+                    case "wooden homes":
+                        alert("You can clearly see that the wooden homes have been attacked... by something strange!");
+                        Village();
+                        break;
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+            }
+                function Black(){
+                    var black = prompt("You notice the glint of an object out of the corner of your eye, it is a small bag full of jewels.").toLowerCase();
+                    switch(black){
+                        case "take jewels":
+                            alert("You take the jewels and barely escape before the blacksmith notices.");
+                            Village();
+                            break;
+                            
+                            
+                            
+                            
+                }
+                    
+                    
+                    
             }
         }
+            
             
             
             
@@ -55,3 +104,29 @@
         </script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var global;
+function Village(){
+    var local;
+}
