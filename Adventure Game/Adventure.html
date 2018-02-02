@@ -41,7 +41,7 @@
                                 inventory.sword ++;
                                 alert("You own " + inventory.sword+" swords");
                                 inventory.coins = inventory.coins - 100;
-                                alert("You have " + inventory.coins + "coins remaining");
+                                alert("You have " + inventory.coins + " coins remaining");
                             }
                     Black();
                    
@@ -49,11 +49,11 @@
                 
                     case "inn":
                         alert("You enter the old weather torn inn. The innkeeper asks what he can do for you? Rent a room. Buy food. Sit by the hearth fire.");
-                        Village();
+                        Returnn();
                     break;
                     case "stable":
                         alert("The stable master informs you that all of the horses have been stolen last night. He asks you for your help?");
-                        Village();
+                        Returnn();
                     break;
                     case "exit":
                         alert("Run away, chicken! THE END!")
@@ -64,7 +64,7 @@
             
                     case "wooden homes":
                         alert("You can clearly see that the wooden homes have been attacked... by something strange!");
-                        Village();
+                        Returnn();
                         break;
                               
                               
@@ -92,7 +92,7 @@
                     switch(black){
                         case "take jewels":
                             alert("You take the jewels and barely escape before the blacksmith notices.");
-                            Village();
+                            Returnn();
                             break;
                             
                             
@@ -100,10 +100,23 @@
                             
                 }
                     
+                function Returnn(){
+                    var returnn = prompt("Where would you like to go now? The wooden homes,  the inn, or the stables? ").toLowerCase();
+                    switch(returnn){
+                        case "wooden homes":
+                            break;
+                            //alert("You venture to the wooden homes and enter.");
+                    //var returrn = prompt("You see a mysterious egg decorated blue and purple //with intricate patterns.")
                     
+                        
+                        
+                            
+                            
+             }
+        } 
                     
-            }
-        }
+    }
+}
             
             
             
