@@ -64,6 +64,7 @@
             
                     case "wooden homes":
                         alert("You can clearly see that the wooden homes have been attacked... by something strange!");
+                        Homes();
                         Returnn();
                         break;
                               
@@ -103,20 +104,33 @@
                 
                     
     }
-          function Returnn(){
+                function Returnn(){
                     var returnn = prompt("Where would you like to go now? The wooden homes,  the inn, or the stables? ").toLowerCase();
                     switch(returnn){
                         case "wooden homes":
-                            break;
-                            //alert("You venture to the wooden homes and enter.");
-                    //var returrn = prompt("You see a mysterious egg decorated blue and purple //with intricate patterns.")
-                    
+                    alert("You venture to the wooden homes and enter.");
+                   
+                    break;
                         
                         
                             
                             
              }
-        }       
+        }
+                function Homes(){
+                var homes = prompt ("You notice a loose panel in the back of the house and can hear something behind it.").toLowerCase();
+                    switch(homes){
+                        case "move":
+                            alert("You slide the panel away from the wall and see a round blue gemstone glowing.")
+                            break;
+                        case "leave":
+                            alert("You turn around and leave the houses")
+                            Returnn();
+                            break;
+        }
+                    
+                    
+    }
 }
             
             
