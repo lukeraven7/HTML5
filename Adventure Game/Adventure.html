@@ -8,12 +8,16 @@
         <p>Made by: Luke Raven</p>
         <script>
             //Javascript object for an inventory
-            var inventory = {
+            var inventory = {   
                 sword:0,
                 bread:0,
                 meat:0,
                 coins:1000, 
             }
+             var invList = function(){
+                    alert("Coins = "+ inventory.coins);
+                    
+                }
            Start();
             function Start(){
                 
@@ -65,6 +69,10 @@
                     case "wooden homes":
                         alert("You can clearly see that the wooden homes have been attacked... by something strange!");
                         Homes();
+                        break;
+                    case "inventory":
+                        invList();
+                        Returnn();
                         break;
                               
                               
@@ -130,6 +138,12 @@
                     
                     
     }
+               
+                function Gem(){
+                    var gem = prompt("What would you like to do with the stone?").toLowerCase();
+                    
+                }                 
+                
 }
             
             
