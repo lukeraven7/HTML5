@@ -51,7 +51,7 @@
                             //alert("You own " + inventory.shield+" shields");
                             //inventory.coins = inventory.coins - 100;
                             //alert("You have " + inventory.coins + " coins remaining");
-                        }
+                        //}
                             }
                     Black();
                    
@@ -174,7 +174,8 @@
         }
     }
                 function Bad(){
-                    var bad = prompt("You can now smell rotting flesh as you continue walk in darkness... You notice crystalline-like animals staring at you through the darkness. Eyes like furnaces blaze through the dark towards you. You run as fast as you can with the wolves hot on your trail... You stumble and begin to crawl, you hit into something human-like. You look up and see the blacksmith.);
+                    var bad = prompt("You can now smell rotting flesh as you continue walk in darkness... You notice crystalline-like animals staring at you through the darkness. Eyes like furnaces blaze through the dark towards you. You run as fast as you can with the wolves hot on your trail... You stumble and begin to crawl, you hit into something human-like. You look up and see the blacksmith.");
+                    switch(bad){
                     case "ask for help":
                         alert(" Surprised, you ask for help and he grins at you saying you should have stayed in town. His eyes turn red and they wolves converge on you, they devour your arms and legs and the last thing you see is the blacksmith adding dozens of fresh bones to his fence collection..");
                         break;
@@ -184,8 +185,8 @@
                     default:
                         alert("You are chased down by the wolves and mauled...");
                         break;
-                    
-                }
+      }
+    }
 }
             
             
