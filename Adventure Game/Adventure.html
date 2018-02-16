@@ -22,7 +22,7 @@
             function Start(){
                 
                 var playerName = prompt("What is your name traveler?"); 
-                    alert("Welcome to the land of Vexxor, " + playerName);
+                    alert("Welcome to the land of Vyxx, " + playerName);
                 
                 var startGame = confirm("Are you ready to begin your adventure?");
                     if(startGame){
@@ -46,11 +46,11 @@
                                 alert("You own " + inventory.sword+" swords");
                                 inventory.coins = inventory.coins - 100;
                                 alert("You have " + inventory.coins + " coins remaining");
-                         if(blacksmith = "shield" || blacksmith == "buy shield" && inventory.coins >=100) {
-                            inventory.shield ++;
-                            alert("You own " + inventory.shield+" shields");
-                            inventory.coins = inventory.coins - 100;
-                            alert("You have " + inventory.coins + " coins remaining");
+                         //if(blacksmith = "shield" || blacksmith == "buy shield" && inventory.coins >= 100) {
+                           // inventory.shield ++;
+                            //alert("You own " + inventory.shield+" shields");
+                            //inventory.coins = inventory.coins - 100;
+                            //alert("You have " + inventory.coins + " coins remaining");
                         }
                             }
                     Black();
@@ -59,6 +59,7 @@
                 
                     case "swamp":
                         alert("You enter the boggy swamp. The frail old woman asks what she can do for you and if you have seen a blue gem that went missing?");
+                        Swamp();
                         Returnn();
                         break;
                     case "stable":
@@ -118,7 +119,7 @@
                     
     }
                 function Returnn(){
-                    var returnn = prompt("Where would you like to go now? The wooden homes,  the inn, or the stables? ").toLowerCase();
+                    var returnn = prompt("Where would you like to go now? The wooden homes, the swamp, the blacksmith, or the stables? ").toLowerCase();
                     switch(returnn){
                         case "wooden homes":
                     alert("You venture to the wooden homes and enter.");
@@ -140,7 +141,10 @@
                             alert("You turn around and leave the houses");
                             Returnn();
                             break;
-        }
+                        default:
+                            alert("I do not understand!");
+        }                  Returnn();
+                    break;
                     
                     
     }
@@ -149,7 +153,39 @@
                     var gem = prompt("What would you like to do with the stone?").toLowerCase();
                     
                 }                 
-                
+ 
+                function Swamp(){
+                    var swamp = prompt("You see an frail old woman and she asks what you are doing there and if you have seen a blue gemstone. She tells you about the demon wolves that haunt the town and how they can only be killed by a sword coated by special jewels...");
+                    switch(swamp){
+                        case "give her gem":
+                            alert("She tells you that she knows how to craft the sword to kill the wolves and where they sleep during the day, she just needs a sword and a bag of jewels to make the weapon to kill them.");
+                            break;
+                        case "leave":
+                            alert("You leave the swamp and free your nose from the stenchy odor");
+                            Returnn();
+                            break;
+                        case "wolves":
+                            alert("You leave the old woman and wander a couple miles until you reach fence that looks like it is made out of bones. You can smell fire and it smells familiar...");
+                            Bad();
+                        default:
+                            alert("I do not understand!");
+                            Returnn();
+                            break;
+        }
+    }
+                function Bad(){
+                    var bad = prompt("You can now smell rotting flesh as you continue walk in darkness... You notice crystalline-like animals staring at you through the darkness. Eyes like furnaces blaze through the dark towards you. You run as fast as you can with the wolves hot on your trail... You stumble and begin to crawl, you hit into something human-like. You look up and see the blacksmith.);
+                    case "ask for help":
+                        alert(" Surprised, you ask for help and he grins at you saying you should have stayed in town. His eyes turn red and they wolves converge on you, they devour your arms and legs and the last thing you see is the blacksmith adding dozens of fresh bones to his fence collection..");
+                        break;
+                    case "beg":
+                        alert("The blacksmith whistles and the wolves trot up to him, he whistles again and the wolves drag you over to a gigantic pit filled with lava, you can hear people screaming as they melt and their bones are used to form new wolves. You are tossed in and your bones are used to create a new demon wolf you hardly remember anything, except the only thing you have left is your soul, and you must serve your new master until eternity. ");
+                        break;
+                    default:
+                        alert("You are chased down by the wolves and mauled...");
+                        break;
+                    
+                }
 }
             
             
