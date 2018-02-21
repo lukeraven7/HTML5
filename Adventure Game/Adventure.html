@@ -71,6 +71,7 @@
                         break;
                     default:
                         alert("I do not understand" + village);
+                        Returnn();
                         break;
             
                     case "wooden homes":
@@ -103,14 +104,16 @@
                               
             }
                 function Black(){
-                    var black = prompt("You notice the glint of an object out of the corner of your eye, it is a small bag full of jewels.").toLowerCase();
+                    var black = prompt("You notice the glint of an object out of the corner of your eye, it is a small bag full of jewels. Do you want to take jewels? Or leave them?").toLowerCase();
                     switch(black){
                         case "take jewels":
                             alert("You take the jewels and barely escape before the blacksmith notices.");
                             Returnn();
                             break;
-                            
-                            
+                        case "leave":
+                            alert("You leave the blacksmith.")
+                            Returnn();
+                            break;
                             
                             
                 }
@@ -132,7 +135,7 @@
              }
         }
                 function Homes(){
-                var homes = prompt ("You notice a loose panel in the back of the house and can hear something behind it.").toLowerCase();
+                var homes = prompt ("You notice a loose panel in the back of the house and can hear something behind it. Do you move the panel or leave?").toLowerCase();
                     switch(homes){
                         case "move":
                             alert("You slide the panel away from the wall and see a round blue gemstone glowing.");
@@ -155,7 +158,7 @@
                 }                 
  
                 function Swamp(){
-                    var swamp = prompt("You see an frail old woman and she asks what you are doing there and if you have seen a blue gemstone. She tells you about the demon wolves that haunt the town and how they can only be killed by a sword coated by special jewels...");
+                    var swamp = prompt("You see an frail old woman and she asks what you are doing there and if you have seen a blue gemstone. She tells you about the demon wolves that haunt the town and how they can only be killed by a sword coated by special jewels... Do you give her the gem you found, leave, or go to the wolves?");
                     switch(swamp){
                         case "give her gem":
                             alert("She tells you that she knows how to craft the sword to kill the wolves and where they sleep during the day, she just needs a sword and a bag of jewels to make the weapon to kill them.");
@@ -164,7 +167,7 @@
                             alert("You leave the swamp and free your nose from the stenchy odor");
                             Returnn();
                             break;
-                        case "wolves":
+                        case "go to wolves":
                             alert("You leave the old woman and wander a couple miles until you reach fence that looks like it is made out of bones. You can smell fire and it smells familiar...");
                             Bad();
                         default:
@@ -174,7 +177,7 @@
         }
     }
                 function Bad(){
-                    var bad = prompt("You can now smell rotting flesh as you continue walk in darkness... You notice crystalline-like animals staring at you through the darkness. Eyes like furnaces blaze through the dark towards you. You run as fast as you can with the wolves hot on your trail... You stumble and begin to crawl, you hit into something human-like. You look up and see the blacksmith.");
+                    var bad = prompt("You can now smell rotting flesh as you continue walk in darkness... You notice crystalline-like animals staring at you through the darkness. Eyes like furnaces blaze through the dark towards you. You run as fast as you can with the wolves hot on your trail... You stumble and begin to crawl, you hit into something human-like. You look up and see the blacksmith. Do you ask for help, or beg?");
                     switch(bad){
                     case "ask for help":
                         alert(" Surprised, you ask for help and he grins at you saying you should have stayed in town. His eyes turn red and they wolves converge on you, they devour your arms and legs and the last thing you see is the blacksmith adding dozens of fresh bones to his fence collection..");
